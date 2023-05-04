@@ -1,4 +1,4 @@
-# Google Font Tester
+# Font Tester
 
 [Chrome web store](https://chrome.google.com/webstore/category/extensions?hl=en)
 
