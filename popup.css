@@ -1,0 +1,22 @@
+body {
+  width: 300px;
+  background-color: #001f3f;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+select {
+  padding: 5px;
+}
+
+img {
+  height: 50px;
+}
