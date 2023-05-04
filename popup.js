@@ -31,4 +31,7 @@ const setPageFont = (url, fontFamily) => {
   }
 
   document.body.style.fontFamily = fontFamily;
+  const style = document.createElement('style');
+  style.textContent = `body * { font-family: inherit !important; }`;
+  document.head.appendChild(style);
 };
