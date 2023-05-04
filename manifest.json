@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Google Fonts tester",
+  "name": "Font Tester",
   "description": "Preview your webpage with Google Fonts",
-  "version": "1.0",
+  "version": "0.0.1",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
