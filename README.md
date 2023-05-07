@@ -1,6 +1,6 @@
 # Font Tester
 
-[Chrome web store](https://chrome.google.com/webstore/detail/font-tester/imccahjhfnnifmcmfelbcijnilebgggg)
+Install from the [Chrome Web Store](https://chrome.google.com/webstore/detail/font-tester/imccahjhfnnifmcmfelbcijnilebgggg)
 
 Chrome browser extension used to preview the current page with a selection of Google fonts
 
