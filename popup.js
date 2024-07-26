@@ -19,19 +19,24 @@ fontSelector.addEventListener('change', async (event) => {
 });
 
 const setPageFont = (url, fontFamily) => {
-  const existingLink = document.querySelector('#google-fonts-extension-link');
-
-  if (existingLink) existingLink.href = url;
-  else {
-    const link = document.createElement('link');
-    link.id = 'google-fonts-extension-link';
-    link.rel = 'stylesheet';
-    link.href = url;
-    document.head.appendChild(link);
+  let fontLink = document.querySelector('#google-fonts-extension-link');
+  let fontStyle = document.querySelector('#google-font-style');
+    
+  if (!fontLink) {
+    fontLink = document.createElement('link');
+    fontLink.id = 'google-fonts-extension-link';
+    fontLink.rel = 'stylesheet';
+    fontLink.href = url;
+    document.head.appendChild(fontLink);
   }
 
+  if (!fontStyle) {
+    fontStyle = document.createElement('style');
+    fontStyle.id = 'google-font-style';
+    document.head.appendChild(fontStyle);
+  }
+
+  fontLink.href = url;
+  fontStyle.textContent = `body * { font-family: inherit !important; }`;
   document.body.style.fontFamily = fontFamily;
-  const style = document.createElement('style');
-  style.textContent = `body * { font-family: inherit !important; }`;
-  document.head.appendChild(style);
 };
